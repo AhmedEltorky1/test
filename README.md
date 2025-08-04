@@ -123,6 +123,61 @@
             margin: 20px 0;
         }
         
+        .step-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .step-title {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 8px;
+            margin-bottom: 12px;
+        }
+
+        .code-example {
+            background-color: #f8f9fa;
+            border-left: 3px solid #3498db;
+            padding: 10px;
+            margin: 10px 0;
+            font-family: monospace;
+        }
+
+        .good-example {
+            background-color: #e8f5e9;
+            border-left: 3px solid #4caf50;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .bad-example {
+            background-color: #ffebee;
+            border-left: 3px solid #f44336;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .message-example {
+            background-color: #e3f2fd;
+            border-left: 3px solid #2196f3;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .tips-section {
+            background-color: #fff8e1;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .tips-section ol {
+            padding-right: 20px;
+        }
+        
         @media (max-width: 768px) {
             .hero-section {
                 padding: 50px 0;
@@ -152,23 +207,204 @@
             <div class="row">
                 <div class="col-md-6">
                     <h4 id="sourcingSubtitle">كيفية العثور على المرشحين المثاليين:</h4>
-                    <ul id="sourcingListAr">
-                        <li>استخدم كلمات البحث مثل "Customer Service Representative" أو "Call Center Agent"</li>
-                        <li>ابحث في مجموعات التوظيف على LinkedIn وفيسبوك</li>
-                        <li>استخدم منصات مثل Wuzzuf وLinkedIn وBayt للعثور على المرشحين</li>
-                        <li>ابحث عن خريجين جدد من أقسام اللغات والإدارة</li>
-                        <li>استهدف الأشخاص الذين لديهم خبرة في خدمة العملاء حتى لو لم تكن في مجال مراكز الاتصال</li>
-                    </ul>
+                    
+                    <div class="step-card mb-4">
+                        <h5 class="step-title">١. فهم الوظيفة بشكل كامل</h5>
+                        <div class="step-content">
+                            <p>قبل البدء في البحث، يجب فهم متطلبات الوظيفة تماماً:</p>
+                            <ul>
+                                <li>ما هي متطلبات الوظيفة الأساسية؟</li>
+                                <li>هل اللغة مهمة وأي مستوى مطلوب؟</li>
+                                <li>هل تطلب خبرة أم يمكن للمبتدئين التقديم؟</li>
+                                <li>مكان العمل وساعات العمل والمرتب</li>
+                                <li>أهم 3 مهارات يجب توفرها في المرشح</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card mb-4">
+                        <h5 class="step-title">٢. استخدام كلمات البحث الصحيحة</h5>
+                        <div class="step-content">
+                            <p>أمثلة لكلمات البحث الفعالة:</p>
+                            <div class="code-example">
+                                <p><strong>خدمة عملاء بالإنجليزية:</strong><br>
+                                "customer service" AND "fluent English" AND Cairo</p>
+                                
+                                <p><strong>دعم فني:</strong><br>
+                                "IT support" OR "technical support" AND "troubleshooting"</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card mb-4">
+                        <h5 class="step-title">٣. كتابة إعلان وظيفي جذاب</h5>
+                        <div class="step-content">
+                            <p><strong>إعلان جيد:</strong></p>
+                            <div class="good-example">
+                                <p>📢 مطلوب موظفين خدمة عملاء<br>
+                                📍 المكان: القاهرة - مدينة نصر<br>
+                                💰 المرتب: 6000 جنيه + بونص<br>
+                                🎓 الشروط:<br>
+                                - خريجين فقط<br>
+                                - لغة إنجليزية مستوى B1 أو أعلى<br>
+                                - شيفتات متغيرة - يومين أجازة</p>
+                            </div>
+                            
+                            <p><strong>إعلان ضعيف:</strong></p>
+                            <div class="bad-example">
+                                <p>مطلوب خدمة عملاء فورًا<br>
+                                لو مهتم ابعتلي</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card mb-4">
+                        <h5 class="step-title">٤. البحث من المصادر الصحيحة</h5>
+                        <div class="step-content">
+                            <p><strong>لينكدإن:</strong></p>
+                            <div class="code-example">
+                                <p>("customer service" OR "call center") AND "fluent English" AND Egypt</p>
+                            </div>
+                            <p>رسالة تواصل نموذجية:</p>
+                            <div class="message-example">
+                                <p>Hello [Name],<br>
+                                I came across your profile and was impressed by your background.<br>
+                                We're hiring Customer Service Reps for a multinational company in Cairo.<br>
+                                If you're open to opportunities, let's connect!</p>
+                            </div>
+                            
+                            <p><strong>فيسبوك:</strong><br>
+                            - مجموعات مثل: كول سنتر - خدمة عملاء - وظائف خالية القاهرة</p>
+                            
+                            <p><strong>مواقع التوظيف:</strong><br>
+                            - Wuzzuf - Forasna - وظف - Jobzella</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card mb-4">
+                        <h5 class="step-title">٥. تصفية المرشحين</h5>
+                        <div class="step-content">
+                            <ul>
+                                <li>تقييم مستوى اللغة</li>
+                                <li>التحقق من الخبرة العملية</li>
+                                <li>التأكد من استعداده لموقع وساعات العمل</li>
+                                <li>ملاحظة سرعة الاستجابة والالتزام</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <h5 class="step-title">٦. تنظيم العمل</h5>
+                        <div class="step-content">
+                            <p>أدوات مقترحة:</p>
+                            <ul>
+                                <li>Excel/Google Sheets لتتبع المرشحين</li>
+                                <li>Trello أو Notion لإدارة العملية</li>
+                                <li>CRM بسيط لمتابعة التواصل</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
                 </div>
                 <div class="col-md-6 english-content" style="display: none;">
                     <h4>How to Find Ideal Candidates:</h4>
-                    <ul id="sourcingListEn">
-                        <li>Use search terms like "Customer Service Representative" or "Call Center Agent"</li>
-                        <li>Search in job groups on LinkedIn and Facebook</li>
-                        <li>Use platforms like Wuzzuf, LinkedIn, and Bayt to find candidates</li>
-                        <li>Look for fresh graduates from language and business departments</li>
-                        <li>Target people with customer service experience even if not in call centers</li>
-                    </ul>
+                    
+                    <div class="step-card mb-4">
+                        <h5 class="step-title">1. Understand the Job Completely</h5>
+                        <div class="step-content">
+                            <p>Before starting your search, fully understand the job requirements:</p>
+                            <ul>
+                                <li>What are the core job requirements?</li>
+                                <li>Is language important and what level is needed?</li>
+                                <li>Does it require experience or is it entry-level?</li>
+                                <li>Work location, hours, and salary</li>
+                                <li>Top 3 skills the candidate must have</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card mb-4">
+                        <h5 class="step-title">2. Use the Right Keywords</h5>
+                        <div class="step-content">
+                            <p>Examples of effective search terms:</p>
+                            <div class="code-example">
+                                <p><strong>English Customer Service:</strong><br>
+                                "customer service" AND "fluent English" AND Cairo</p>
+                                
+                                <p><strong>Technical Support:</strong><br>
+                                "IT support" OR "technical support" AND "troubleshooting"</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card mb-4">
+                        <h5 class="step-title">3. Write Attractive Job Posts</h5>
+                        <div class="step-content">
+                            <p><strong>Good Example:</strong></p>
+                            <div class="good-example">
+                                <p>📢 Hiring Customer Service Representatives<br>
+                                📍 Location: Cairo - Nasr City<br>
+                                💰 Salary: 6000 EGP + Bonus<br>
+                                🎓 Requirements:<br>
+                                - Fresh graduates accepted<br>
+                                - English level B1 or higher<br>
+                                - Rotational shifts - 2 days off</p>
+                            </div>
+                            
+                            <p><strong>Bad Example:</strong></p>
+                            <div class="bad-example">
+                                <p>Customer service needed<br>
+                                Contact me if interested</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card mb-4">
+                        <h5 class="step-title">4. Search in the Right Places</h5>
+                        <div class="step-content">
+                            <p><strong>LinkedIn:</strong></p>
+                            <div class="code-example">
+                                <p>("customer service" OR "call center") AND "fluent English" AND Egypt</p>
+                            </div>
+                            <p>Sample outreach message:</p>
+                            <div class="message-example">
+                                <p>Hello [Name],<br>
+                                I came across your profile and was impressed by your background.<br>
+                                We're hiring Customer Service Reps for a multinational company in Cairo.<br>
+                                If you're open to opportunities, let's connect!</p>
+                            </div>
+                            
+                            <p><strong>Facebook:</strong><br>
+                            - Groups like: Call Center - Customer Service - Cairo Jobs</p>
+                            
+                            <p><strong>Job Sites:</strong><br>
+                            - Wuzzuf - Forasna - Wazif - Jobzella</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card mb-4">
+                        <h5 class="step-title">5. Filter Candidates</h5>
+                        <div class="step-content">
+                            <ul>
+                                <li>Assess language level</li>
+                                <li>Verify work experience</li>
+                                <li>Confirm availability for location and hours</li>
+                                <li>Note response time and commitment</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <h5 class="step-title">6. Organize Your Work</h5>
+                        <div class="step-content">
+                            <p>Recommended tools:</p>
+                            <ul>
+                                <li>Excel/Google Sheets for candidate tracking</li>
+                                <li>Trello or Notion for process management</li>
+                                <li>Simple CRM for communication follow-up</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
             
@@ -188,6 +424,34 @@
                         </div>
                         <p class="text-center mt-2" id="videoDesc2">نصائح متقدمة في البحث عن الموظفين</p>
                     </div>
+                </div>
+            </div>
+            
+            <!-- Recruiter Tips Section -->
+            <div class="tips-section mt-4">
+                <h4 class="text-center ar-content">نصائح لتصبح مسؤول توظيف محترف</h4>
+                <h4 class="text-center english-content" style="display: none;">Tips to Become a Skilled Recruiter</h4>
+                
+                <div class="ar-content">
+                    <ol>
+                        <li>افهم كل وظيفة قبل البحث عن مرشحين لها</li>
+                        <li>كن سريعاً في الرد على المرشحين</li>
+                        <li>حافظ على أسلوب محترم وجذاب في التواصل</li>
+                        <li>كن واضحاً في الشروط ولا تعد بما لا تستطيع الوفاء به</li>
+                        <li>تابع مع المرشحين حتى المرفوضين - قد يحتاجونهم في المستقبل</li>
+                        <li>تعرف على الكفاءات الموجودة في السوق وحافظ على اتصالك معهم</li>
+                    </ol>
+                </div>
+                
+                <div class="english-content" style="display: none;">
+                    <ol>
+                        <li>Understand each job thoroughly before sourcing</li>
+                        <li>Respond quickly to candidates</li>
+                        <li>Maintain professional and attractive communication style</li>
+                        <li>Be clear about requirements and don't promise what you can't deliver</li>
+                        <li>Follow up with rejected candidates - they might be needed in future</li>
+                        <li>Know the talent in the market and maintain connections</li>
+                    </ol>
                 </div>
             </div>
         </section>
